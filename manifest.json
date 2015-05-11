@@ -1,0 +1,21 @@
+{
+    "name": "Trello Horizontal Scroll",
+    "description": "Enables Horizontal Scroll in Trello",
+    "version": "1.0.0",
+    "permissions": [
+        "https://trello.com/*"
+    ],
+    "background": {
+        "scripts": ["jquery.min.js", "jquery.mousewheel.js", "background.js"],
+        "persistent": false
+    },
+    "icons": {
+        "128": "TrelloHorizontalScroll128.png"
+    },
+    "manifest_version": 2,
+
+    "content_scripts": [{
+        "matches": ["https://trello.com/*"],
+        "js": ["jquery.min.js", "jquery.mousewheel.js", "background.js"]
+    }]
+}
