@@ -2,8 +2,6 @@ var currentScrollValue;
 document.getElementById("scrollerInput").onmousemove = function() {
     currentScrollValue = this.value;
     document.getElementById('scrollerValue').innerHTML = currentScrollValue;
-
-
 };
 
 document.getElementById("scrollerInput").onmouseleave = function() {
@@ -12,7 +10,7 @@ document.getElementById("scrollerInput").onmouseleave = function() {
     }, function() {
         if (chrome.runtime.error) {
             console.log("Runtime error.");
-        }
+        }        
     });
 
 }

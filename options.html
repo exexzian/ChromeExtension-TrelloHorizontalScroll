@@ -1,15 +1,17 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>Set Trello Scroll Speed</title>
     <style>
-    body{position:absolute;left:40%;top:5%}#scrollerValue{position:relative;left:40%;padding:10px}#scrollContainer{position:absolute;left:30%}#scrollerInput{-webkit-appearance:none;border:1px solid #fff;width:300px}#scrollerInput::-webkit-slider-runnable-track{width:300px;height:5px;background:#ccc;border:none;border-radius:5px}#scrollerInput::-webkit-slider-thumb{-webkit-appearance:none;border:none;height:16px;width:16px;border-radius:50%;background:#01E412;margin-top:-5px}#scrollerInput:focus{outline:0}#scrollerInput:focus::-webkit-slider-runnable-track{background:#575757}
+    #scrollerInput{-webkit-appearance:none;border:1px solid #fff;width:400px}#scrollerValue{position:relative;left:40%;padding:10px}#scrollerInput::-webkit-slider-runnable-track{width:400px;height:5px;background:#ccc;border:none;border-radius:5px}#scrollerInput::-webkit-slider-thumb{-webkit-appearance:none;border:none;height:16px;width:16px;border-radius:50%;background:#01E412;margin-top:-5px}#scrollerInput:focus{outline:0}#scrollerInput:focus::-webkit-slider-runnable-track{background:#575757}
     </style>
 </head>
 
 <body>
-    <h2>Set Trello Horizontal Scroll Speed</h2>
     <div id="scrollerContainer">
+        <h2>Set Trello Horizontal Scroll Speed</h2>
+        <br>
         <input id='scrollerInput' type='range' min='30' max='100' value='30' step='5' />
         <br>
         <b><span id='scrollerValue'>30</span></b>
